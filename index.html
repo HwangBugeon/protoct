@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메튠연구소 소개</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #f5f6fa; color: #333; }
+    header {
+      background: linear-gradient(135deg, #1e90ff, #00c8c8);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 { font-size: 2.4rem; margin-bottom: 12px; }
+    header p { font-size: 1rem; opacity: 0.9; }
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 16px;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a { text-decoration: none; color: #555; font-size: 0.95rem; }
+    nav a:hover { color: #1e90ff; }
+    .container { max-width: 860px; margin: 40px auto; padding: 0 20px; display: flex; flex-direction: column; gap: 30px; }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 36px 32px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      border-left: 4px solid #1e90ff;
+      padding-left: 12px;
+    }
+    .card p { line-height: 1.8; margin-bottom: 12px; color: #555; }
+    table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    th, td { padding: 12px 16px; border: 1px solid #e5e5e5; text-align: left; }
+    th { background: #f0f4ff; font-weight: 600; width: 130px; }
+    .vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; }
+    .vision-box { background: #f8faff; border-radius: 8px; padding: 24px; }
+    .vision-box h3 { font-size: 1.1rem; margin-bottom: 12px; color: #1e90ff; }
+    .vision-box p, .vision-box li { line-height: 1.8; color: #555; }
+    .vision-box ul { list-style: none; padding: 0; }
+    .vision-box ul li::before { content: '- '; }
+    .business-list { list-style: none; padding: 0; margin-top: 12px; }
+    .business-list li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; color: #555; line-height: 1.7; }
+    .business-list li::before { content: '• '; color: #1e90ff; font-weight: bold; }
+    .example-list { margin-top: 12px; padding-left: 4px; }
+    .example-list p { color: #555; line-height: 1.8; }
+    .comment-area { background: #f8faff; border-radius: 8px; padding: 16px; color: #888; font-size: 0.95rem; }
+    footer { text-align: center; padding: 28px; color: #aaa; font-size: 0.85rem; background: white; margin-top: 10px; }
+    @media (max-width: 600px) { .vision-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>메튠연구소</h1>
+  <p>데이터와 기술로 새로운 가치를 연구하는 메튠연구소입니다.</p>
+</header>
+
+<nav>
+  <a href="#about">연구소 소개</a>
+  <a href="#vision">비전 &amp; 미션</a>
+  <a href="#business">주요 사업</a>
+  <a href="#contact">연락처</a>
+  <a href="#comments">댓글</a>
+</nav>
+
+<div class="container">
+
+  <div class="card" id="about">
+    <h2>연구소 소개</h2>
+    <p>메튠연구소는 디지털 기술과 데이터 기반 솔루션을 통해 생활과 비즈니스의 변화를 만들어가는 연구 중심 조직입니다.</p>
+    <p>사용자 경험, 데이터 분석, 온라인 서비스 기획 등을 융합하여 새로운 제품과 서비스를 설계하고 검증하는 것을 목표로 합니다.</p>
+    <table>
+      <tr><th>기관명</th><td>메튠연구소</td></tr>
+      <tr><th>설립연도</th><td>2026년</td></tr>
+      <tr><th>업종</th><td>전자상거래 소매업 및 디지털 서비스 기획·연구</td></tr>
+    </table>
+  </div>
+
+  <div class="card" id="vision">
+    <h2>비전 &amp; 미션</h2>
+    <div class="vision-grid">
+      <div class="vision-box">
+        <h3>Vision</h3>
+        <p>일상과 산업의 경계를 잇는 디지털 연구소.</p>
+        <p>데이터와 실험을 기반으로 실질적인 변화를 만드는 파트너를 지향합니다.</p>
+      </div>
+      <div class="vision-box">
+        <h3>Mission</h3>
+        <ul>
+          <li>데이터 기반 의사결정 문화 확산</li>
+          <li>사용자 중심 온라인 서비스 설계</li>
+          <li>실험과 검증을 통한 지속 가능한 성장 모델 제안</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="business">
+    <h2>주요 사업 및 연구 분야</h2>
+    <p>메튠연구소는 다음과 같은 영역을 중심으로 연구와 프로젝트를 수행합니다.</p>
+    <ul class="business-list">
+      <li>온라인 전자상거래 서비스 기획 및 운영 전략 연구</li>
+      <li>고객 데이터 분석 및 맞춤형 마케팅 전략 수립</li>
+      <li>웹/모바일 서비스 UX·UI 리서치 및 프로토타입 제작</li>
+      <li>신규 디지털 비즈니스 모델 발굴 및 PoC(개념검증) 수행</li>
+      <li>AI·자동화 도구를 활용한 업무 효율화 솔루션 탐색</li>
+    </ul>
+    <div class="example-list" style="margin-top:20px;">
+      <h3 style="font-size:1rem; margin-bottom:10px; color:#333;">연구·프로젝트 예시</h3>
+      <p>- 중소상공인을 위한 온라인 판매 전략 컨설팅</p>
+      <p>- 고객 여정 분석을 통한 이탈률 감소 개선안 제시</p>
+      <p>- 소규모 브랜드를 위한 실험형 랜딩 페이지 제작 및 성과 분석</p>
+    </div>
+  </div>
+
+  <div class="card" id="contact">
+    <h2>연락처</h2>
+    <p>협업 및 프로젝트 문의는 아래 연락처로 문의해 주세요.</p>
+    <table>
+      <tr><th>이메일</th><td>korhbg@gmail.com</td></tr>
+      <tr><th>운영 시간</th><td>평일 10:00 ~ 18:00 (점심 12:00 ~ 13:00)</td></tr>
+    </table>
+  </div>
+
+  <div class="card" id="comments">
+    <h2>댓글</h2>
+    <div class="comment-area">
+      메튠연구소 소개 페이지에 대한 의견을 자유롭게 남겨 주세요.
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 메튠연구소. All rights reserved.
+</footer>
+
+</body>
+</html>
